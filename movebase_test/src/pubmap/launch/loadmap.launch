@@ -1,0 +1,6 @@
+<launch>
+
+    <arg name="map" default ="nav.yaml" />
+    <node name="map_sever" pkg="map_server" type="map_server" args="$(find pubmap)/map/$(arg map)" />
+
+</launch>
